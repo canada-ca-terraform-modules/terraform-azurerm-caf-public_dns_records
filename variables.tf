@@ -1,21 +1,21 @@
 variable "publicDnsRecordsConfig" {
-  type    = any
+  type        = any
   description = "Values for the public DNS records"
-  default = {}
+  default     = {}
 }
 
 variable "zone_name" {
-  type = string
+  type        = string
   description = "Required: Name the public DNS zone"
 }
 
 variable "resource_group_name" {
-  type = string
+  type        = string
   description = "Required: Name of the resource groups where the zone is located"
 }
 
 variable "tags" {
-  description = "Tags for the Private DNS Zone"
-  type = map(string)
-  default = {}
+  description = "Tags for the public DNS records"
+  type        = map(string)
+  default     = {}
 }

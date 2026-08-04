@@ -49,7 +49,7 @@ resource "azurerm_dns_caa_record" "azurerm_dns_caa_records" {
       value = record.value.value
     }
   }
-  tags                = merge(var.tags, try(each.value.tags, {}))
+  tags = merge(var.tags, try(each.value.tags, {}))
 }
 
 resource "azurerm_dns_mx_record" "azurerm_dns_mx_records" {
@@ -66,7 +66,7 @@ resource "azurerm_dns_mx_record" "azurerm_dns_mx_records" {
       exchange   = record.value.exchange
     }
   }
-  tags                = merge(var.tags, try(each.value.tags, {}))
+  tags = merge(var.tags, try(each.value.tags, {}))
 }
 
 resource "azurerm_dns_ns_record" "azurerm_dns_ns_records" {
@@ -107,7 +107,7 @@ resource "azurerm_dns_srv_record" "azurerm_dns_srv_records" {
       target   = record.value.target
     }
   }
-  tags                = merge(var.tags, try(each.value.tags, {}))
+  tags = merge(var.tags, try(each.value.tags, {}))
 }
 
 resource "azurerm_dns_txt_record" "azurerm_dns_txt_records" {
@@ -123,5 +123,5 @@ resource "azurerm_dns_txt_record" "azurerm_dns_txt_records" {
       value = record.value
     }
   }
-  tags                = merge(var.tags, try(each.value.tags, {}))
+  tags = merge(var.tags, try(each.value.tags, {}))
 }
