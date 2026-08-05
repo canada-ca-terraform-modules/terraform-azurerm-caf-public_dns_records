@@ -1,7 +1,9 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9 |
 
 ## Providers
 
@@ -11,7 +13,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_public_dns_records"></a> [public\_dns\_records](#module\_public\_dns\_records) | /home/maltaib1/azdo/modules/terraform-azurerm-caf-public_dns_records | n/a |
+| <a name="module_public_dns_records"></a> [public\_dns\_records](#module\_public\_dns\_records) | github.com/canada-ca-terraform-modules/terraform-azurerm-caf-public_dns_records | v1.1.0 |
 
 ## Resources
 
