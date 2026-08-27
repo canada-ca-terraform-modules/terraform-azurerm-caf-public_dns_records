@@ -14,6 +14,8 @@ terraform {
   backend "local" {}
 }
 
+# live-test workflow trigger anchor
+
 provider "azurerm" {
   storage_use_azuread             = true
   resource_provider_registrations = "legacy"
